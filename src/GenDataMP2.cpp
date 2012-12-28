@@ -124,5 +124,11 @@ int main( int argc, const char** argv )
     writeMatrix( matB, BRows, BCols, "matB.txt" );
     writeMatrix( matC, CRows, CCols, "matC.txt" );
 
+    // Free memory
+
+    free(matA);
+    free(matB);
+    free(matC);
+
     return 0;
 }
